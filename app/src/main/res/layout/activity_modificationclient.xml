@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/imageviewmodifclient"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@color/colorPrimaryDark"
+        android:src="@drawable/ic_add_a_photo_black_24dp"/>
+    <EditText
+        android:id="@+id/modifiernom"
+        android:hint="nom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"/>
+    <EditText
+        android:id="@+id/modifierprenom"
+        android:hint="prenom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"/>
+
+    <Button
+        android:id="@+id/btn_modifierclient"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Modier"/>
+
+
+
+</LinearLayout>

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/ghostwhite"
+    tools:context=".Activity_menu">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="1dp"
+
+
+
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gestion Clients"
+            android:textSize="45dp"
+
+            android:fontFamily="cursive"
+            android:textColor="@color/midnightblue"
+            android:gravity="center"/>
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageaddclient"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@color/slateblue"
+        android:src="@drawable/ic_add_a_photo_black_24dp"
+        android:paddingRight="4dp"
+        android:clickable="true"
+
+        android:layout_marginBottom="30dp">
+
+
+
+
+    </ImageView>
+
+
+    <LinearLayout
+        android:layout_width="319dp"
+        android:layout_height="58dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/raduis2"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Nom Client     " />
+
+        <EditText
+            android:id="@+id/ednomclient"
+            android:layout_width="403dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="45dp"
+            android:digits="ABCDEFGHIJKLMNOPQRSTUVXYZ abcdefghijklmnopqrstuvwxyz"
+            android:ems="10" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="327dp"
+        android:layout_height="58dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/raduis2"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Prenom Cleint       " />
+
+        <EditText
+            android:id="@+id/edprenomclient"
+            android:layout_width="403dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="45dp"
+            android:ems="10"
+            android:digits="ABCDEFGHIJKLMNOPQRSTUVXYZ abcdefghijklmnopqrstuvwxyz" />
+
+    </LinearLayout>
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_ajouterC"
+            android:layout_width="wrap_content"
+            android:layout_height="65dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/raduis_btn"
+            android:enabled="false"
+
+
+            android:text="Ajouter" />
+        <Button
+            android:id="@+id/btn_listerC"
+            android:layout_width="wrap_content"
+            android:layout_height="65dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/raduis_btn2"
+
+
+
+            android:text="Lister" />
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>

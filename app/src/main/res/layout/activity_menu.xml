@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/ghostwhite"
+tools:context=".Activity_menu">
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="1dp"
+
+
+
+    android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gestion Produits"
+        android:textSize="45dp"
+
+        android:fontFamily="cursive"
+        android:textColor="@color/darkcyan"
+        android:gravity="center"/>
+
+
+
+
+
+
+
+
+</LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageadd"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@color/darkcyan"
+        android:src="@drawable/ic_add_a_photo_black_24dp"
+        android:paddingRight="4dp"
+        android:clickable="true"
+
+        android:layout_marginBottom="30dp">
+
+
+
+
+    </ImageView>
+
+
+    <LinearLayout
+        android:layout_width="393dp"
+        android:layout_height="58dp"
+        android:background="@drawable/raduis"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Num produit     " />
+
+        <EditText
+            android:id="@+id/ednum"
+            android:layout_width="403dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="45dp"
+            android:inputType="number"
+            android:ems="10" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="393dp"
+        android:layout_height="58dp"
+        android:background="@drawable/raduis"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Prix produit       " />
+
+        <EditText
+            android:id="@+id/edprix"
+            android:layout_width="403dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="45dp"
+            android:inputType="numberDecimal"
+            android:ems="10" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="393dp"
+        android:layout_height="58dp"
+        android:background="@drawable/raduis"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Désignation      " />
+
+        <EditText
+            android:id="@+id/eddesig"
+            android:layout_width="403dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="45dp"
+            android:digits="ABCDEFGHIJKLMNOPQRSTUVXYZ abcdefghijklmnopqrstuvwxyz 0123456789"
+            android:ems="10" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="393dp"
+        android:layout_height="58dp"
+        android:background="@drawable/raduis"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Quantité            " />
+
+        <EditText
+            android:id="@+id/edquant"
+            android:layout_width="403dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="45dp"
+            android:inputType="number"
+            android:ems="10" />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_ajouterP"
+            android:layout_width="wrap_content"
+            android:layout_height="65dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/raduis_btn"
+            android:enabled="false"
+            android:text="Ajouter" />
+
+
+
+        <Button
+            android:id="@+id/btn_afficher"
+            android:layout_width="wrap_content"
+            android:layout_height="65dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/raduis_btn"
+            android:text="Lister" />
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>

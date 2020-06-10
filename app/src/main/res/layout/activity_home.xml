@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:gravity="center"
+    android:background="@color/backgroundcolor">
+
+    <LinearLayout
+
+        android:clipToPadding="false"
+
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardproduit"
+
+            android:clickable="true"
+            android:layout_width="160dp"
+            android:layout_height="190dp"
+            android:layout_margin="10dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:background="@drawable/ripple"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageView
+
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:background="@drawable/cerclebackgroundpurple"
+                    android:src="@drawable/ic_redeem_black_24dp"
+
+                    android:padding="10dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"
+                    android:text="Produit"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:layout_margin="10dp"
+                    android:background="@color/lightgray" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Gérer mes produit"
+                    android:padding="5dp"
+                    android:textColor="@color/darkgray"/>
+
+
+
+
+
+
+
+
+
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardclient"
+            android:clickable="true"
+            android:layout_width="160dp"
+            android:layout_height="190dp"
+            android:layout_margin="10dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:background="@drawable/cerclebackgroundpink"
+                    android:src="@drawable/ic_person_black_24dp"
+                    android:padding="10dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"
+                    android:text="Client"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:layout_margin="10dp"
+                    android:background="@color/lightgray" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Gérer mes clients"
+                    android:padding="5dp"
+                    android:textColor="@color/darkgray"/>
+
+
+
+
+
+
+
+
+
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:clipToPadding="false"
+
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardfacture"
+
+            android:clickable="true"
+            android:layout_width="160dp"
+            android:layout_height="190dp"
+            android:layout_margin="10dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="64dp"
+
+                    android:layout_height="64dp"
+                    android:background="@color/pink"
+                    android:padding="10dp"
+                    android:src="@drawable/ic_line_style_black_24dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"
+                    android:text="Facture"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:layout_margin="10dp"
+                    android:background="@color/lightgray" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text=""
+                    android:padding="5dp"
+                    android:textColor="@color/darkgray"/>
+
+
+
+
+
+
+
+
+
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

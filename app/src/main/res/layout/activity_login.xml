@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@drawable/wall1"
+
+
+    >
+
+
+
+
+    <EditText
+
+        android:id="@+id/edittextusername"
+        android:layout_width="187dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="300dp"
+        android:drawableLeft="@drawable/ic_email"
+
+        android:hint="@string/username" />
+
+    <EditText
+        android:id="@+id/edittextpassword"
+        android:layout_width="187dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:drawableLeft="@drawable/ic_password"
+        android:inputType="textPassword"
+
+        android:hint="@string/Password" />
+
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_margin="50dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/login"
+        android:background="@color/darkolivegreen"
+        android:textColor="@android:color/primary_text_light" />
+
+    <Button
+        android:id="@+id/btn_authent"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_margin="0dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/singup"
+        android:background="@color/darkolivegreen"
+        android:textColor="@color/black" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:orientation="horizontal">
+
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/not_registred" />
+
+        <TextView
+            android:id="@+id/textview_register"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:paddingLeft="10dp"
+            android:textStyle="bold"
+            android:text="@string/register" />
+
+     </LinearLayout>
+
+
+</LinearLayout>
+
+
+
+
+
+
+
+
+

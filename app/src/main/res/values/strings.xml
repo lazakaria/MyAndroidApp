@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">GestionProduitsApplication</string>
+    <string name="username">Utlisateur</string>
+    <string name="Password">Mot de passe</string>
+    <string name="login">Se Connecter</string>
+    <string name="not_registred">non enregistré?</string>
+    <string name="register"> Ok </string>
+    <string name="confpassword">Confirmer MDP</string>
+    <string name="Already_registred">Déja enregistré</string>
+    <string name="singup"> Authenitifier </string>
+    <string name="password">password</string>
+    <string name="registeruser">registeruser</string>
+    <string name="nomclient">nom_client</string>
+    <string name="prenomclient">prenom_client</string>
+
+</resources>
