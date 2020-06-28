@@ -57,7 +57,7 @@ public class ProduitListAdapter extends BaseAdapter {
             holder.prixtxtview = row.findViewById(R.id.prixtxtview);
             holder.designationtxtview = row.findViewById(R.id.designationtxtview);
             holder.quantitetxtview = row.findViewById(R.id.quantitetxtview);
-        //    holder.imageView = row.findViewById(R.id.imageicone);
+            holder.imageView = row.findViewById(R.id.imageicone);
             row.setTag(holder);
 
         } else {
@@ -67,12 +67,11 @@ public class ProduitListAdapter extends BaseAdapter {
         Modelproduit modelproduit = produitList.get(position);
         holder.numtxtview.setText(String.valueOf(modelproduit.getNumproduit()));
         holder.designationtxtview.setText(modelproduit.getDesignation());
-
         holder.prixtxtview.setText(String.valueOf(modelproduit.getPrix()));
         holder.quantitetxtview.setText(String.valueOf(modelproduit.getQuantite()));
-       // byte[] listImage = modelproduit.getImage();
-       // Bitmap bitmap = BitmapFactory.decodeByteArray(listImage,0, listImage.length);
-        //holder.imageView.setImageBitmap(bitmap);
+        byte[] produitImage = modelproduit.getImage();
+        Bitmap bitmap = BitmapFactory.decodeByteArray(produitImage,0, produitImage.length);
+        holder.imageView.setImageBitmap(bitmap);
 
         return row;
 

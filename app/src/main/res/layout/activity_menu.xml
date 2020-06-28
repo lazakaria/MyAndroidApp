@@ -14,9 +14,6 @@ tools:context=".Activity_menu">
     android:layout_height="wrap_content"
     android:layout_marginTop="5dp"
     android:layout_marginBottom="1dp"
-
-
-
     android:orientation="horizontal">
 
     <TextView
@@ -30,26 +27,18 @@ tools:context=".Activity_menu">
         android:gravity="center"/>
 
 
-
-
-
-
-
-
 </LinearLayout>
 
     <ImageView
         android:id="@+id/imageadd"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
+        android:layout_width="69dp"
+        android:layout_height="72dp"
+        android:layout_marginBottom="30dp"
         android:background="@color/darkcyan"
-        android:src="@drawable/ic_add_a_photo_black_24dp"
-        android:paddingRight="4dp"
         android:clickable="true"
+        android:paddingRight="4dp"
 
-        android:layout_marginBottom="30dp">
-
-
+        android:src="@drawable/ic_add_a_photo_black_24dp">
 
 
     </ImageView>
@@ -135,7 +124,7 @@ tools:context=".Activity_menu">
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
-            android:text="Quantité            " />
+            android:text="Stock            " />
 
         <EditText
             android:id="@+id/edquant"

@@ -16,7 +16,7 @@
         android:layout_gravity="center_vertical">
 
         <ImageView
-            android:id="@+id/imageicone"
+            android:id="@+id/imageiconecl"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:src="@mipmap/ic_launcher"/>

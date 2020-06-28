@@ -24,11 +24,9 @@ public class Gestion_ProduitActivity extends AppCompatActivity {
 
 
     ListView mListView;
-
     ArrayList<Modelproduit> mList;
     ProduitListAdapter mAdapter = null;
     ImageView imageViewIcone;
-
 
 
     @Override
@@ -54,8 +52,8 @@ public class Gestion_ProduitActivity extends AppCompatActivity {
             String designation = cursor.getString(2);
             float prix = cursor.getFloat(3);
             int quantite = cursor.getInt(4);
-         //   byte[] image = cursor.getBlob(5);
-            mList.add(new Modelproduit(id, numproduit, designation, prix, quantite));
+            byte[] image = cursor.getBlob(5);
+            mList.add(new Modelproduit(id, numproduit, designation, prix, quantite, image ));
 
         }
         mAdapter.notifyDataSetChanged();
@@ -191,7 +189,8 @@ public class Gestion_ProduitActivity extends AppCompatActivity {
             String designation = cursor.getString(2);
             float prix = cursor.getFloat(3);
             int quantite = cursor.getInt(4);
-            mList.add(new Modelproduit(id, numproduit, designation, prix, quantite));
+            byte[] image = cursor.getBlob(5);
+            mList.add(new Modelproduit(id, numproduit, designation, prix, quantite,image));
         }
         mAdapter.notifyDataSetChanged();
     }

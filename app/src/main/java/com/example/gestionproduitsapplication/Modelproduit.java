@@ -7,17 +7,20 @@ public class Modelproduit {
     private  float prix;
     private  int quantite;
     private String designation;
-  // private byte[]image;
+    private byte[]image;
 
 
-    public Modelproduit( int id, int numproduit, String designation, float prix, int quantite) {
+    public Modelproduit( int id, int numproduit, String designation, float prix, int quantite, byte[]image) {
        this.id = id;
         this.numproduit = numproduit;
         this.designation = designation;
         this.prix = prix;
         this.quantite = quantite;
 
-     //   this.image = image;
+        this.image = image;
+    }
+    public Modelproduit() {
+
     }
 
     public int getId() {
@@ -60,11 +63,18 @@ public class Modelproduit {
         this.designation = designation;
     }
 
-   /* public byte[] getImage() {
+   public byte[] getImage() {
         return image;
     }
 
     public void setImage(byte[] image) {
         this.image = image;
-    }*/
+    }
+   @Override
+   public String toString(){
+       return designation;
+   }
+
 }
+
+

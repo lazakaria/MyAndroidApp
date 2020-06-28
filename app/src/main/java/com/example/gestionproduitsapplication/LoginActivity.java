@@ -26,9 +26,9 @@ public class LoginActivity extends AppCompatActivity {
         txtpwd =  (EditText)findViewById(R.id.edittextpassword);
         btn_log =   (Button) findViewById(R.id.btn_login);
         btn_auth =  (Button) findViewById(R.id.btn_authent);
-        textViewregister =  (TextView) findViewById(R.id.textview_register);
 
-        textViewregister.setOnClickListener(new View.OnClickListener() {
+
+        btn_auth.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 

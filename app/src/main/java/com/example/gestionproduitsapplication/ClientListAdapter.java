@@ -1,6 +1,8 @@
 package com.example.gestionproduitsapplication;
 
 import android.content.Context;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -54,8 +56,7 @@ public class ClientListAdapter extends BaseAdapter {
             rowcl = inflater.inflate(Layout, null);
             holder.nomctxtview = rowcl.findViewById(R.id.nomcltxtview);
             holder.prenomctxtview = rowcl.findViewById(R.id.prenomtxtview);
-
-            //    holder.imageView = row.findViewById(R.id.imageicone);
+            holder.imageViewcl = rowcl.findViewById(R.id.imageiconecl);
             rowcl.setTag(holder);
 
         } else {
@@ -65,10 +66,9 @@ public class ClientListAdapter extends BaseAdapter {
         Modelclient modelproduit = clientList.get(position);
         holder.nomctxtview.setText(modelproduit.getNomclient());
         holder.prenomctxtview.setText(modelproduit.getPrenomclient());
-
-        // byte[] listImage = modelproduit.getImage();
-        // Bitmap bitmap = BitmapFactory.decodeByteArray(listImage,0, listImage.length);
-        //holder.imageView.setImageBitmap(bitmap);
+        byte[] produitImage = modelproduit.getImageclient();
+        Bitmap bitmap = BitmapFactory.decodeByteArray(produitImage,0, produitImage.length);
+        holder.imageViewcl.setImageBitmap(bitmap);
 
         return rowcl;
 

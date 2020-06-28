@@ -47,8 +47,8 @@ public class Gestion_ClientActivity extends AppCompatActivity {
             int id = cursor.getInt(0);
             String nomclient  = cursor.getString(1);
             String prenomclient = cursor.getString(2);
-            //   byte[] image = cursor.getBlob(5);
-            mListcl.add(new Modelclient( id, nomclient, prenomclient ));
+            byte[] imageclient = cursor.getBlob(3);
+            mListcl.add(new Modelclient( id, nomclient, prenomclient, imageclient ));
         }
 
         mAdaptercl.notifyDataSetChanged();
@@ -183,8 +183,9 @@ public class Gestion_ClientActivity extends AppCompatActivity {
             int id = cursor.getInt(0);
             String nomclient = cursor.getString(1);
             String prenomclient = cursor.getString(2);
+            byte[] imageclient = cursor.getBlob(3);
 
-            mListcl.add(new Modelclient(id, nomclient, prenomclient)) ;
+            mListcl.add(new Modelclient(id, nomclient, prenomclient,imageclient)) ;
         }
         mAdaptercl.notifyDataSetChanged();
     }

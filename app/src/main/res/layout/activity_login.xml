@@ -7,11 +7,18 @@
     tools:context=".LoginActivity"
     android:orientation="vertical"
     android:gravity="center_horizontal"
-    android:background="@drawable/wall1"
+    android:background="@drawable/bgr4">
 
 
-    >
+    <ImageView
 
+        android:layout_width="278dp"
+        android:layout_height="151dp"
+        android:layout_marginTop="70dp"
+        android:src="@drawable/logologin3"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 
 
 
@@ -20,9 +27,8 @@
         android:id="@+id/edittextusername"
         android:layout_width="187dp"
         android:layout_height="40dp"
-        android:layout_marginTop="300dp"
+        android:layout_marginTop="70dp"
         android:drawableLeft="@drawable/ic_email"
-
         android:hint="@string/username" />
 
     <EditText
@@ -43,8 +49,8 @@
         android:layout_margin="50dp"
         android:layout_marginTop="20dp"
         android:text="@string/login"
-        android:background="@color/darkolivegreen"
-        android:textColor="@android:color/primary_text_light" />
+        android:background="@color/burlywood"
+        android:textColor="@android:color/white" />
 
     <Button
         android:id="@+id/btn_authent"
@@ -53,30 +59,8 @@
         android:layout_margin="0dp"
         android:layout_marginTop="20dp"
         android:text="@string/singup"
-        android:background="@color/darkolivegreen"
-        android:textColor="@color/black" />
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-
-        android:orientation="horizontal">
-
-
-        <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="35dp"
-        android:layout_marginTop="40dp"
-        android:text="@string/not_registred" />
-
-        <TextView
-            android:id="@+id/textview_register"
-            android:layout_width="wrap_content"
-            android:layout_height="35dp"
-            android:paddingLeft="10dp"
-            android:textStyle="bold"
-            android:text="@string/register" />
-
-     </LinearLayout>
+        android:background="@color/burlywood"
+        android:textColor="@color/white" />
 
 
 </LinearLayout>

@@ -3,11 +3,10 @@
     <string name="username">Utlisateur</string>
     <string name="Password">Mot de passe</string>
     <string name="login">Se Connecter</string>
-    <string name="not_registred">non enregistré?</string>
     <string name="register"> Ok </string>
-    <string name="confpassword">Confirmer MDP</string>
+    <string name="confpassword">Confirmation</string>
     <string name="Already_registred">Déja enregistré</string>
-    <string name="singup"> Authenitifier </string>
+    <string name="singup"> S\'authenitifier </string>
     <string name="password">password</string>
     <string name="registeruser">registeruser</string>
     <string name="nomclient">nom_client</string>

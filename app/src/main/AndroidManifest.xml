@@ -2,7 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.gestionproduitsapplication">
 
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
 
     <application
         android:allowBackup="true"
@@ -11,7 +13,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Gestion_ClientActivity"></activity>
+        <activity android:name=".FactureActivity"></activity>
+        <activity android:name=".Gestion_ClientActivity" />
         <activity android:name=".ClientActivity" />
         <activity android:name=".Activity_menu" />
         <activity android:name=".SplashActivity">

@@ -18,13 +18,14 @@
         <ImageView
             android:id="@+id/imageicone"
             android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:src="@mipmap/ic_launcher"/>
+            android:layout_height="106dp"
+            android:src="@mipmap/ic_launcher" />
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:layout_marginLeft="5dp"
+            android:layout_marginTop="1dp"
             android:layout_marginStart="5dp">
 
             <TableLayout
@@ -33,20 +34,21 @@
                 <TableRow>
 
                     <TextView
-                        android:text="Numero"
+                        android:text="  Numero"
                         android:textSize="20sp"
                         android:textColor="#000"
                         android:textStyle="bold"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"/>
+
                     <TextView
                         android:id="@+id/numtxtview"
+                        android:layout_width="180dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20dp"
                         android:text="Num ici"
-                        android:textSize="20sp"
                         android:textColor="#000"
-
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"/>
+                        android:textSize="20sp" />
 
 
 
@@ -55,7 +57,7 @@
                 <TableRow>
 
                     <TextView
-                        android:text="Prix"
+                        android:text="  Prix"
                         android:textSize="20sp"
                         android:textColor="#000"
                         android:textStyle="bold"
@@ -63,12 +65,13 @@
                         android:layout_height="wrap_content"/>
                     <TextView
                         android:id="@+id/prixtxtview"
+                        android:layout_marginLeft="20dp"
                         android:text="Prix ici"
                         android:textSize="20sp"
                         android:textColor="#000"
 
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"/>
+                        android:layout_height="match_parent"/>
 
 
 
@@ -77,7 +80,7 @@
                 <TableRow>
 
                     <TextView
-                        android:text="Designa"
+                        android:text="  Designa"
                         android:textSize="20sp"
                         android:textColor="#000"
                         android:textStyle="bold"
@@ -86,11 +89,12 @@
                     <TextView
                         android:id="@+id/designationtxtview"
                         android:text="Designation ici"
+                        android:layout_marginLeft="20dp"
                         android:textSize="20sp"
                         android:textColor="#000"
 
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"/>
+                        android:layout_height="match_parent"/>
 
 
 
@@ -99,7 +103,7 @@
                 <TableRow>
 
                     <TextView
-                        android:text="Quantité"
+                        android:text="  Quantité"
                         android:textSize="20sp"
                         android:textColor="#000"
                         android:textStyle="bold"
@@ -108,11 +112,12 @@
                     <TextView
                         android:id="@+id/quantitetxtview"
                         android:text="Quantité ici"
+                        android:layout_marginLeft="20dp"
                         android:textSize="20sp"
                         android:textColor="#000"
 
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"/>
+                        android:layout_height="match_parent"/>
 
 
                 </TableRow>
